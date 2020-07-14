@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f1f1;
+    padding:15px;
+}
+.header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serifs;
+    background-color: white;
+    
+    margin: auto;
+    margin-top: 0.5em;
+    
+    padding: 4em 0;
+}
+.heading{
+    font-size: xxx-large;
+    
+}
+.sub-heading{
+    color: #141414;
+    font-size: 1.1em;
+    margin-top: 2em;
+    margin-bottom: 1.4em;
+}
+.nav{
+    padding-bottom: 1em;
+    margin: auto;
+}
+.nav-content {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333333;
+}
+.nav-content li{
+    float: left;
+}
+.nav-content a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-content li:hover{
+    background-color: #ddd;
+}
+.nav-content li:hover a{
+    color: black;
+}
+
+.nav-content li:last-child{
+    float:right;
+}
+
+@media screen and (max-width:400px){
+    .nav-content li, .nav-content li:last-child{
+        float: none;
+    }
+}
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-content{
+    float: left;
+    background-color: #f1f1f1;
+    width:75%; 
+}
+.main-content1{
+    margin-bottom: 1em;
+    background-color: white;
+    padding: 15px;
+}
+
+.main-content1 *{
+    padding: 8px;
+    text-align: left;
+}
+.main-content1 h4{
+    color: #141414;
+}
+.main-content1 .image1-border{
+    width: 100%;
+    background-color: #aaaaaa;
+    margin-left: 0.4em;
+}
+.side-content1 *{
+    padding: 8px;
+    text-align: left;
+}
+.side-content1{
+    background-color: white;
+    margin-bottom: 1em;
+}
+.side-content {
+    background-color: #f1f1f1;
+    width:25%;
+    padding-left: 15px;
+    float: left;
+}
+.side-content1 .image1-border2 p{
+    padding: 1em;
+    border: 2px solid #aaaaaa;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.side-content1 .image1-border2 p:first-child{
+    margin-top: 8px;
+}
+.follow-me{
+    padding: 2em 0.5em;
+}
+.clear-float::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.footer{
+    background-color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 2em;
+}
+.image1-logo{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:800px){
+    .side-content{
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+    .image1-logo{
+        width:50%;
+        height: auto;
+    }
+    .main-content{
+        width: 100%;
+    }
+
+}
